@@ -40,5 +40,5 @@ public class Node {
 
     public void setHeight(int height) {
         this.height = height;
-    } 
+    }
 }

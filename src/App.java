@@ -7,6 +7,7 @@ import main.Ejercicio_04_depth.Depth;
 import main.Materia.Controllers.ArbolAVL;
 import main.Materia.Controllers.ArbolBinario;
 import main.Materia.Controllers.ArbolRecorridos;
+import main.Materia.Controllers.Graph;
 import main.Materia.Models.Node;
 
 public class App {
@@ -16,9 +17,21 @@ public class App {
         // runArbolBinario();
         // runEjercicio3();
         // runArbolAvl();
-        runEjercicio1();
-        runEjercicio2();
-        runEjercicio4();
+        //runEjercicio1();
+        //runEjercicio2();
+        //runEjercicio4();
+        runGraph();
+    }
+
+    private static void runGraph(){
+        Graph grafo = new Graph();
+        grafo.addNode(5);
+        grafo.addNode(7);
+        grafo.addNode(9);
+        grafo.addNode(11);
+        grafo.addNode(3);
+    
+        grafo.printGraph();
     }
 
     public static void runEjercicio1() {
